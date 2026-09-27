@@ -46,7 +46,7 @@ return [
         // API Authentication Guard for Passport Token Introspection
         'api' => [
             'driver' => 'passport',
-            'provider' => 'users',
+            'provider' => 'personas',
         ],
     ],
 
@@ -69,14 +69,14 @@ return [
 
     'providers' => [
         'users' => [
-            'driver' => 'persona_eloquent', // Custom provider that maps JWT Persona sub claims contextually
+            'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', User::class),
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'personas' => [
+            'driver' => 'persona_eloquent', // Custom provider that maps JWT Persona sub claims contextually
+            'model' => env('AUTH_MODEL', User::class),
+        ],
     ],
 
     /*

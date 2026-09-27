@@ -109,3 +109,4 @@ desktop.ini
 *.sublime-workspace
 *.sublime-project
 .fleet/
+TrustAuth/public/fonts-manifest.dev.json

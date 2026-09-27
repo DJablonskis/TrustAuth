@@ -121,7 +121,7 @@ export default function AdminGovernance({ globalStats, partners = [], erasureLog
 
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
-            <Head title="Super Admin - Partner & Webhook Control" />
+            <Head title="Admin - Partner & Webhook Control" />
 
             {/* Top Navigation */}
             <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-30 px-6 py-4 flex flex-wrap justify-between items-center gap-4">
@@ -131,7 +131,7 @@ export default function AdminGovernance({ globalStats, partners = [], erasureLog
                     </div>
                     <div>
                         <div className="flex items-center gap-2">
-                            <span className="text-base font-bold tracking-tight text-white">TrustAuth Super Admin</span>
+                            <span className="text-base font-bold tracking-tight text-white">TrustAuth Administration</span>
                             <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20 font-semibold">
                                 Partner Control
                             </span>

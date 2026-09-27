@@ -19,7 +19,7 @@ use Laravel\Passport\Client;
 class AdminGovernanceController extends Controller
 {
     /**
-     * Display the Super Admin Governance & Partner Telemetry Dashboard.
+     * Display the Admin Governance & Partner Telemetry Dashboard.
      *
      * @return Response|JsonResponse
      */
