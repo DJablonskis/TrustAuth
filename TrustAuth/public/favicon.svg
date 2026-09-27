@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shield_grad" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="accent_grad" x1="44" y1="36" x2="84" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#c7d2fe" />
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4338ca" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Shield -->
+  <path d="M64 12C88 12 110 20 110 20V62C110 90 89 110.8 64 116C39 110.8 18 90 18 62V20C18 20 40 12 64 12Z" 
+        fill="url(#shield_grad)" 
+        filter="url(#shadow)" />
+        
+  <!-- Subtle Inner Border Highlight -->
+  <path d="M64 16C86 16 106 23.5 106 23.5V62C106 87.8 86.8 107 64 111.8C41.2 107 22 87.8 22 62V23.5C22 23.5 42 16 64 16Z" 
+        stroke="white" 
+        stroke-opacity="0.18" 
+        stroke-width="2" 
+        fill="none" />
+
+  <!-- Stylized Monogram / Keyhole Symbol -->
+  <path d="M46 44H82V54H69V90H59V54H46V44Z" fill="url(#accent_grad)"/>
+  <circle cx="64" cy="40" r="5" fill="#ffffff" />
+</svg>

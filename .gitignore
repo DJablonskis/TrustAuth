@@ -1,0 +1,111 @@
+# ==============================================================================
+# TrustAuth & Third Party Standalone Repository .gitignore
+# Rename this file to `.gitignore` when initializing the new standalone repo:
+#   mv gitignore.template .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Dependencies & Package Managers
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+vendor/
+**/vendor/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Environment, Credentials & Local Configs
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+Homestead.json
+Homestead.yaml
+auth.json
+
+# ------------------------------------------------------------------------------
+# Cryptographic Keys, Certificates & Tokens
+# ------------------------------------------------------------------------------
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+*.cer
+**/*.key
+**/*.pem
+**/*.crt
+**/*.pfx
+**/*.p12
+oauth-*.key
+**/oauth-*.key
+storage/oauth-*.key
+TrustAuth/storage/oauth-*.key
+*.secret
+credentials.json
+token.json
+
+# ------------------------------------------------------------------------------
+# SQLite / Database Files
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite-journal
+*.sqlite3
+*.db
+*.db-journal
+**/*.sqlite
+**/*.sqlite-journal
+**/*.sqlite3
+**/*.db
+**/*.db-journal
+
+# ------------------------------------------------------------------------------
+# Laravel Runtime, Storage & Caches (TrustAuth)
+# ------------------------------------------------------------------------------
+TrustAuth/storage/app/*
+!TrustAuth/storage/app/.gitignore
+TrustAuth/storage/framework/cache/*
+!TrustAuth/storage/framework/cache/.gitignore
+TrustAuth/storage/framework/sessions/*
+!TrustAuth/storage/framework/sessions/.gitignore
+TrustAuth/storage/framework/testing/*
+!TrustAuth/storage/framework/testing/.gitignore
+TrustAuth/storage/framework/views/*
+!TrustAuth/storage/framework/views/.gitignore
+TrustAuth/storage/logs/*
+!TrustAuth/storage/logs/.gitignore
+TrustAuth/storage/pail/*
+TrustAuth/storage/inertia-devtools/*
+.phpunit.result.cache
+**/.phpunit.result.cache
+.phpactor.json
+
+# ------------------------------------------------------------------------------
+# Frontend Build Artifacts (Vite / Tailwind / Inertia)
+# ------------------------------------------------------------------------------
+TrustAuth/public/build
+TrustAuth/public/hot
+TrustAuth/public/storage
+dist/
+build/
+
+# ------------------------------------------------------------------------------
+# OS & IDE Files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.sublime-workspace
+*.sublime-project
+.fleet/
